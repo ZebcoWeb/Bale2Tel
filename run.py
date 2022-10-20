@@ -88,7 +88,7 @@ async def bale_to_telegram(update: Update, context):
 
 bale_app.add_handler(
     MessageHandler(
-        filters=filters.ALL,
+        filters=filters.UpdateType.MESSAGE,
         callback=bale_to_telegram
     )
 )
