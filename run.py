@@ -12,7 +12,7 @@ TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 BALE_BASE_URL = 'https://tapi.bale.ai/bot'
 BALE_BASE_FILE_URL = 'https://tapi.bale.ai/file/bot'
 
-f = open('/config/channel_routes.json', 'r')
+f = open('config/channel_routes.json', 'r')
 CHANNEL_ROUTES = json.loads(f.read())
 f.close()
 
